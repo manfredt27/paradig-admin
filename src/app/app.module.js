@@ -3,11 +3,15 @@
 
   angular
     .module('paradigAdmin', [
+      'ui.bootstrap',
       'ngSanitize',
       'ui.router',
       'toastr',
       'firebase',
-      'paradigAdmin.firebase'
+      'ui.bootstrap',
+      'paradigAdmin.firebase',
+      'paradigAdmin.users',
+      'paradigAdmin.login'
       ]);
 
 })();
