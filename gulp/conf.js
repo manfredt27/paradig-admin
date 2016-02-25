@@ -15,7 +15,8 @@ exports.paths = {
   src: 'src',
   dist: 'dist',
   tmp: '.tmp',
-  e2e: 'e2e'
+  e2e: 'e2e',
+  test: 'tests'
 };
 
 /**
@@ -24,7 +25,6 @@ exports.paths = {
  *  to inject css preprocessor deps and js files in karma
  */
 exports.wiredep = {
-  exclude: [/jquery/],
   directory: 'bower_components'
 };
 

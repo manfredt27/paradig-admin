@@ -3,7 +3,6 @@
 
   angular
     .module('paradigAdmin', [
-      'ui.bootstrap',
       'ngSanitize',
       'ui.router',
       'toastr',

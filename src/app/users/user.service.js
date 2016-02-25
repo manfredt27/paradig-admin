@@ -7,7 +7,7 @@
 
   function userService () {
     return {
-      authenticate: authenticate,
+      authenticate: authenticate
     }
 
     function authenticate(username, password) {

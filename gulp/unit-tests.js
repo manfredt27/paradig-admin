@@ -45,7 +45,7 @@ function runTests (singleRun, done) {
 }
 
 gulp.task('test', ['scripts', 'markups'], function(done) {
-  runTests(true, done);
+  runTests(false, done);
 });
 
 gulp.task('test:auto', ['watch'], function(done) {
