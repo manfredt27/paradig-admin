@@ -1,0 +1,26 @@
+-var title = "Dashboard";
+-var author = "@lorenz"
+
+.dashboard
+  main
+    .overview
+      div
+        img(src='app/assets/logo.png', style='\
+    height: 60px;\
+    ')
+      h2 Overview
+
+      .widget-container
+
+        .widget
+          header
+            h3.iconicfill-mail Respuestas
+          .content
+            div(ng-repeat="person in ctrl.people")
+                p
+                  strong Respuestas:
+                  | {{ person.respuestas }}
+
+
+    footer
+      p &copy; 2015 #{title} by #{author}
