@@ -7,7 +7,12 @@
       'ui.router',
       'toastr',
       'firebase',
-      'paradigAdmin.firebase'
+      'paradigAdmin.firebase',
+      'paradigAdmin.age',
+      'paradigAdmin.answers',
+      'paradigAdmin.gender',
+
+
       ]);
 
 })();
