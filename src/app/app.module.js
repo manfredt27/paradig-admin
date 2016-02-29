@@ -10,9 +10,6 @@
       'paradigAdmin.firebase',
       'paradigAdmin.age',
       'paradigAdmin.answers',
-      'paradigAdmin.gender',
-
-
-      ]);
-
+      'paradigAdmin.gender'
+    ]);
 })();

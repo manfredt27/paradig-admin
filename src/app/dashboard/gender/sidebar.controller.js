@@ -10,10 +10,10 @@
   /** @ngInject */
   function routerConfig($stateProvider) {
     $stateProvider
-      .state('dashboard.answers', {
-        url: '/dashboard/answers',
-        templateUrl: 'app/dashboard/answers/answers.jade',
-        controller: 'AnswersController',
+      .state('dashboard.sidebar', {
+        url: '/dashboard/sidebar',
+        templateUrl: 'app/dashboard/sidebar/sidebar.jade',
+        controller: 'SidebarController',
         controllerAs: 'vm'
       });
   }

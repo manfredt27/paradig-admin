@@ -2,13 +2,13 @@
   'use strict';
 
   angular
-    .module('paradigAdmin.answers')
-    .controller('DashboardController', AnswersController);
+    .module('paradigAdmin.gender')
+    .controller('GenderController', GenderController);
 
   /* @ngInject */
-  function AnswersController() {
+  function GenderController() {
     var vm = this
-    vm.AnswersController = AnswersController;
+    vm.GenderController = GenderController;
 
     vm.people = [
       { firstName: "name", lastName: "test" },
@@ -18,13 +18,3 @@
     ]
   }
 })();
-
-
-
-
-
-
-
-
-
-
