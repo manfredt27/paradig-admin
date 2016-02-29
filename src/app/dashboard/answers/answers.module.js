@@ -2,6 +2,5 @@
   'use strict';
 
   angular
-    .module('paradigAdmin.answers', [
-    ]);
+    .module('paradigAdmin.answers', []);
 })();

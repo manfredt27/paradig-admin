@@ -12,7 +12,7 @@
     $stateProvider
       .state('dashboard.age', {
         url: '/dashboard/age',
-        templateUrl: 'app/dashboard/age/age.jade',
+        templateUrl: 'app/dashboard/age/age.html',
         controller: 'AgeController',
         controllerAs: 'vm'
       });

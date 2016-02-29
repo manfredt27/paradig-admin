@@ -3,7 +3,7 @@
 
   angular
     .module('paradigAdmin.answers')
-    .controller('DashboardController', AnswersController);
+    .controller('AnswersController', AnswersController);
 
   /* @ngInject */
   function AnswersController() {

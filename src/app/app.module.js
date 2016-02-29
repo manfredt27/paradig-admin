@@ -7,6 +7,7 @@
       'ui.router',
       'toastr',
       'firebase',
+      'paradigAdmin.dashboard',
       'paradigAdmin.firebase',
       'paradigAdmin.age',
       'paradigAdmin.answers',

@@ -7,8 +7,8 @@
 
   /* @ngInject */
   function DashboardController() {
-    var vm = this
-    vm.DashboardController = DashboardController
+    var vm = this;
+    vm.DashboardController = DashboardController;
   }
 })();
 
