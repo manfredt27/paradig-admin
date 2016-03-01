@@ -11,8 +11,8 @@
   function routerConfig($stateProvider) {
     $stateProvider
       .state('dashboard.answers', {
-        url: '/dashboard/answers',
-        templateUrl: 'app/dashboard/answers/answers.jade',
+        url: '/answers',
+        templateUrl: 'app/dashboard/answers/answers.html',
         controller: 'AnswersController',
         controllerAs: 'vm'
       });

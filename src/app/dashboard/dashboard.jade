@@ -16,10 +16,12 @@ nav.navbar.navbar-default( role="navigation" )
           span.caret
 aside
   ul
-    li: a.iconicfill-home(href='#') Overview
+    li: a.iconicfill-home(ui-sref="dashboard") Overview
 
-    li: a.iconicfill-mail(href='#') Edad
-    li: a.iconicfill-user(href='#') Genero
-    li: a.iconicfill-iphone(href='#') Respuestas
-    li: a.iconicfill-cog(href='') Settings
+    li: a.iconicfill-mail(ui-sref="dashboard.age") Edad
+    li: a.iconicfill-user(ui-sref="dashboard.gender") Genero
+    li: a.iconicfill-iphone(ui-sref="dashboard.answers") Respuestas
+    li: a.iconicfill-cog(ui-sref="dashboard") Settings
     li.search.iconicfill-magnifying-glass: input(placeholder='Search')
+
+div(ui-view)

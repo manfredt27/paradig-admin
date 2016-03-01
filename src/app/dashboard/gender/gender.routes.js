@@ -11,8 +11,8 @@
   function routerConfig($stateProvider) {
     $stateProvider
       .state('dashboard.gender', {
-        url: '/dashboard/gender',
-        templateUrl: 'app/dashboard/gender/gender.jade',
+        url: '/gender',
+        templateUrl: 'app/dashboard/gender/gender.html',
         controller: 'GenderController',
         controllerAs: 'vm'
       });
