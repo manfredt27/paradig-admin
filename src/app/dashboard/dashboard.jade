@@ -1,27 +1,12 @@
-nav.navbar.navbar-default( role="navigation" )
-  .navbar-header
-    button.navbar-toggle.collapsed( type="button", data-toggle="collapse", data-target="#navbar-inverse", aria-expanded="false", aria-controls="navbar")
-      span.sr-only Toggle navigation
-      span.icon-bar
-      span.icon-bar
-      span.icon-bar
-    a.navbar-brand(href="#") Prodig
+div.dashboard-content
+  aside
+    ul
+      li: a.iconicfill-home(ui-sref="dashboard") Overview
 
-  ul.nav.navbar-nav
-    li.active: a( href="#") Home
-    li: a( href="#about" ) About
-    li: a( href="#contact" ) Contact
-    li.dropdown
-      a.dropdown-toggle( href="#", data-toggle="dropdown", role="button", aria-expanded="false" ) Dropdown
-          span.caret
-aside
-  ul
-    li: a.iconicfill-home(ui-sref="dashboard") Overview
+      li: a.iconicfill-mail(ui-sref="dashboard.age") Edad
+      li: a.iconicfill-user(ui-sref="dashboard.gender") Genero
+      li: a.iconicfill-iphone(ui-sref="dashboard.answers") Respuestas
+      li: a.iconicfill-cog(ui-sref="dashboard") Settings
+      li.search.iconicfill-magnifying-glass: input(placeholder='Search')
 
-    li: a.iconicfill-mail(ui-sref="dashboard.age") Edad
-    li: a.iconicfill-user(ui-sref="dashboard.gender") Genero
-    li: a.iconicfill-iphone(ui-sref="dashboard.answers") Respuestas
-    li: a.iconicfill-cog(ui-sref="dashboard") Settings
-    li.search.iconicfill-magnifying-glass: input(placeholder='Search')
-
-div(ui-view)
+  div.dashboard-main(ui-view)

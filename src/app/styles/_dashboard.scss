@@ -7,7 +7,7 @@
 }
 
 // variables
-$midnightblue: #2c3e50;
+$purple: rgb(86, 01, 112);
 $wetasphalt: #34495e;
 $clouds: #ecf0f1;
 $silver: #bdc3c7;
@@ -40,7 +40,7 @@ h1, h2 {
 }
 h1 {
   font: 700 1.75rem $ffamily;
-  border-bottom: 0.5rem solid $midnightblue;
+  border-bottom: 0.5rem solid $purple;
   margin: 0 0 2rem 0;
 }
 h2 {
@@ -62,9 +62,16 @@ p {
   height: auto;
 }
 aside {
-  background: $midnightblue;
-  flex: 2 1 0%;
-  order: 1;
+  background: $purple;
+  display: inline-block;
+  float: left;
+  width: 20%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 
   li a,
   .search {
@@ -110,7 +117,7 @@ main {
         min-width: 15rem;
 
         header {
-          background: $midnightblue;
+          background: $purple;
           color: $clouds;
           padding: $default;
 
@@ -146,4 +153,19 @@ main {
       font-size: .85rem;
     }
   }
+}
+
+.dashboard-main {
+  display: inline-block;
+  width: 80%;
+}
+
+div.dashboard-content{
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }

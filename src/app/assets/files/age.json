@@ -1,0 +1,12 @@
+{
+  masculino:
+    [
+      {username: "user1", edad: 17}
+      user2,
+    ]
+  femenino:
+    [
+      {username: "user1", edad:21}
+
+    ]
+}
