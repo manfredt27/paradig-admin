@@ -15,7 +15,5 @@
     function getDataFor(url) {
       return $http.get(url);
     }
-
   }
-
 })();

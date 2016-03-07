@@ -1,12 +1,6 @@
 {
-  masculino:
+  "people":
     [
-      {username: "user1", correct_answers: 7}
-      user2,
-    ]
-  femenino:
-    [
-      {username: "user1", correct_answers: 9}
-
+      {"username": "user1", "gender": 1}
     ]
 }

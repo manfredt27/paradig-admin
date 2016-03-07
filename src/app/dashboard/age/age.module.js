@@ -2,5 +2,8 @@
   'use strict';
 
   angular
-    .module('paradigAdmin.age', []);
+    .module('paradigAdmin.age', ['common.dataManagerService']);
 })();
+
+
+

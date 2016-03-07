@@ -5,16 +5,40 @@
     .module('paradigAdmin.gender')
     .controller('GenderController', GenderController);
 
-  /* @ngInject */
-  function GenderController() {
-    var vm = this
-    vm.GenderController = GenderController;
+  GenderController.$inject = ['dataManagerService'];
 
-    vm.people = [
-      { firstName: "name", lastName: "test" },
-      { firstName: "name", lastName: "test" },
-      { firstName: "name", lastName: "test" },
-      { firstName: "name", lastName: "test" }
-    ]
+  function GenderController(dataManagerService) {
+    var vm = this;
+    vm.GenderController = GenderController;
+    vm.dataManagerService = dataManagerService;
+
+    dataManagerService.getDataFor('app/assets/files/gender.json')
+      .then(function(data) {
+        vm.people = data.data.people;
+      })
+      .catch(function(){
+        //console.log(e);
+      });
   }
 })();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

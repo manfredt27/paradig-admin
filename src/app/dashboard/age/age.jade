@@ -1,5 +1,5 @@
 -var title = "Dashboard";
--var author = "@lorenz"
+-var author = "@PERNIXSOLUTIONS"
 
 .dashboard
   main
@@ -16,11 +16,22 @@
           header
             h3.iconicfill-mail Edad
           .content
-            div(ng-repeat="person in ctrl.people")
+            div(ng-repeat="person in vm.people")
                 p
-                  strong Nombre:
-                  | {{ person.firstName }}
+                  strong Edad:
+                  | {{ person.age }}
 
 
     footer
-      p &copy; 2015 #{title} by #{author}
+      p &copy; 2016 #{title} by #{author}
+
+
+
+
+
+
+
+
+
+
+

@@ -17,20 +17,11 @@
         controllerAs: 'vm'
       });
   }
-
 })();
 
 
 
 
 
-/* $stateProvider
-  .state('report', {
-    views: {
-      'age': { ... templates and/or controllers ... },
-      'gender': {},
-      'answers': {},
-    }
-  })
-*/
+
 

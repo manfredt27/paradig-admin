@@ -1,12 +1,7 @@
 {
-  masculino:
+  "people":
     [
-      {username: "user1", edad: 17}
-      user2,
-    ]
-  femenino:
-    [
-      {username: "user1", edad:21}
-
+      {"username": "user1", "age": 18}
     ]
 }
+

@@ -17,7 +17,7 @@
         vm.people = data.data.people;
       })
       .catch(function(){
-        //console.log(e);
+
       });
   }
 })();

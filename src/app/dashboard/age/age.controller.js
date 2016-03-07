@@ -5,16 +5,21 @@
     .module('paradigAdmin.age')
     .controller('AgeController', AgeController);
 
-  /* @ngInject */
-  function AgeController() {
+  AgeController.$inject = ['dataManagerService'];
+
+  function AgeController(dataManagerService) {
     var vm = this;
     vm.AgeController = AgeController;
+    vm.dataManagerService = dataManagerService;
 
-    vm.people = [
-      { firstName: "name", lastName: "test" },
-      { firstName: "name", lastName: "test" },
-      { firstName: "name", lastName: "test" },
-      { firstName: "name", lastName: "test" }
-    ]
+    dataManagerService.getDataFor('app/assets/files/age.json')
+      .then(function(data) {
+        vm.people = data.data.people;
+      })
+      .catch(function(){
+        //console.log(e);
+      });
   }
 })();
+
+
