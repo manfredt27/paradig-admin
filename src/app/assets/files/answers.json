@@ -1,6 +1,8 @@
 {
   "people":
     [
-      {"username": "user1", "answers": 7}
+      {"username": "user1", "answers": 7},
+      {"username": "user2", "answers": 8},
+      {"username": "user3", "answers": 9}
     ]
 }

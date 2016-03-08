@@ -1,6 +1,13 @@
 {
   "people":
-    [
-      {"username": "user1", "gender": 1}
-    ]
+    {
+      "male":
+        [
+          {"username": "user1", "answers": 6}
+        ],
+      "female":
+        [
+          {"username": "user2", "answers": 7}
+        ]
+    }
 }

@@ -1,5 +1,5 @@
 -var title = "Dashboard";
--var author = "@lorenz"
+-var author = "@PERNIXSOLUTIONS"
 
 .dashboard
   main
@@ -19,11 +19,11 @@
             div(ng-repeat="person in vm.people")
                 p
                   strong Genero:
-                  | {{ person.gender}}
+                  | {{ person.gender}} {{person.answers}}
 
 
     footer
-      p &copy; 2015 #{title} by #{author}
+      p &copy; 2016 #{title} by #{author}
 
 
 

@@ -11,11 +11,3 @@
     vm.DashboardController = DashboardController;
   }
 })();
-
-
-
-
-
-
-
-

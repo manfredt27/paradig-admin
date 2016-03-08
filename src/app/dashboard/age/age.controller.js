@@ -13,8 +13,8 @@
     vm.dataManagerService = dataManagerService;
 
     dataManagerService.getDataFor('app/assets/files/age.json')
-      .then(function(data) {
-        vm.people = data.data.people;
+      .success(function(data) {
+        vm.people = data.people;
       })
       .catch(function(){
         //console.log(e);
