@@ -16,11 +16,26 @@
           header
             h3.iconicfill-mail Genero
           .content
-            div(ng-repeat="person in vm.people | filter: { gender: 'male' }:true")
+            strong Masculino
+            div(ng-repeat="person in vm.people | filter: { gender: 'M' }")
 
                 p
-                  strong Genero:
-                  | {{person.usermane}}  {{person.gender}}
+                  strong Nombre de usuario:
+                  | {{person.username}}
+
+                  strong Respuestas correctas:
+                  | {{person.answers}}
+
+            strong Femenino
+            div(ng-repeat="person in vm.people | filter: { gender: 'F' }")
+
+                p
+                  strong Nombre de usuario:
+                  | {{person.username}}
+
+                  strong Respuestas correctas:
+                  | {{person.answers}}
+
 
 
     footer

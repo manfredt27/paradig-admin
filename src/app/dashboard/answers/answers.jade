@@ -18,8 +18,12 @@
           .content
             div(ng-repeat="person in vm.people | orderBy:'-answers'")
                 p
-                  strong Respuestas:
-                  | {{ person.answers}} {{ person.username}}
+                  strong Nombre:
+                  |  {{ person.username}}
+                  strong Edad:
+                  |  {{ person.age}}
+                  strong Respuestas Correctas:
+                  |  {{ person.answers}}
 
 
     footer

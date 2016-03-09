@@ -1,8 +1,8 @@
 {
   "people": [
-    {"username": "user1","age": 20,"gender": "M"},
-    {"username": "user2","age": 30,"gender": "F"},
-    {"username": "user3","age": 40,"gender": "F"}
+    {"username": "Saúl","answers": 20,"gender": "M"},
+    {"username": "Maria","answers": 30,"gender": "F"},
+    {"username": "Rebeca","answers": 40,"gender": "F"}
   ]
 }
 

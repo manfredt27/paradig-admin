@@ -1,8 +1,8 @@
 {
   "people":
     [
-      {"username": "user1", "answers": 7},
-      {"username": "user2", "answers": 8},
-      {"username": "user3", "answers": 9}
+      {"username": "Manfred", "answers": 7},
+      {"username": "Carlos", "answers": 8},
+      {"username": "Saúl", "answers": 9}
     ]
 }

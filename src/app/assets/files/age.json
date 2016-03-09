@@ -1,8 +1,8 @@
 {
   "people": [
-      {"username": "user1", "age": 18, "answers": 7},
-      {"username": "user2", "age": 21, "answers": 7},
-      {"username": "user3", "age": 16, "answers": 7},
-      {"username": "user4", "age": 12, "answers": 7}
+      {"username": "Manfred", "age": 18, "answers": 7},
+      {"username": "Carlos", "age": 21, "answers": 7},
+      {"username": "Gian Carlo", "age": 16, "answers": 7},
+      {"username": "Saúl", "age": 12, "answers": 7}
   ]
 }
