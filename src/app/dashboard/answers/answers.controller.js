@@ -14,20 +14,10 @@
 
     dataManagerService.getDataFor('app/assets/files/answers.json')
       .then(function(data) {
-        vm.people = data.data.people;
+        vm.people= data.data.people;
       })
       .catch(function(){
 
       });
   }
 })();
-
-
-
-
-
-
-
-
-
-

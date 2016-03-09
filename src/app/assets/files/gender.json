@@ -1,13 +1,9 @@
 {
-  "people":
-    {
-      "male":
-        [
-          {"username": "user1", "answers": 6}
-        ],
-      "female":
-        [
-          {"username": "user2", "answers": 7}
-        ]
-    }
+  "people": [
+    {"username": "user1","age": 20,"gender": "M"},
+    {"username": "user2","age": 30,"gender": "F"},
+    {"username": "user3","age": 40,"gender": "F"}
+  ]
 }
+
+

@@ -19,19 +19,8 @@
             div(ng-repeat="person in vm.people | orderBy:'-age'")
                 p
                   strong Edad:
-                  | {{person.username}} {{ person.age }} {{person.answers}}
+                  |  {{ person.age }} {{person.answers}}
 
 
     footer
       p &copy; 2016 #{title} by #{author}
-
-
-
-
-
-
-
-
-
-
-

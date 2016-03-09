@@ -16,15 +16,12 @@
           header
             h3.iconicfill-mail Genero
           .content
-            div(ng-repeat="person in vm.people")
+            div(ng-repeat="person in vm.people | filter: { gender: 'male' }:true")
+
                 p
                   strong Genero:
-                  | {{ person.gender}} {{person.answers}}
+                  | {{person.usermane}}  {{person.gender}}
 
 
     footer
       p &copy; 2016 #{title} by #{author}
-
-
-
-

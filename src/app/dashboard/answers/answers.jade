@@ -14,12 +14,12 @@
 
         .widget
           header
-            h3.iconicfill-mail Answers
+            h3.iconicfill-mail Respuestas
           .content
             div(ng-repeat="person in vm.people | orderBy:'-answers'")
                 p
-                  strong Answers
-                  | {{ person.answers }}
+                  strong Respuestas:
+                  | {{ person.answers}} {{ person.username}}
 
 
     footer
