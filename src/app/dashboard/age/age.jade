@@ -5,7 +5,7 @@
   main
     .overview
       div
-        img(src='app/assets/logo.png', style='\
+        img(src='app/assets/files/pictures/logo.png', style='\
     height: 60px;\
     ')
       h2 Overview
@@ -17,15 +17,19 @@
             h3.iconicfill-mail Edad
           .content
             div(ng-repeat="person in vm.people | orderBy:'-age'")
-                p
-                  strong Nombre:
-                  |  {{ person.username }}
+              table.flat-table.flat-table-1
 
-                  strong Edad:
-                  |  {{ person.age }}
+                    thead
+                      th Mombre
+                      th Edad
+                      th Respuestas correctas
+                    tbody
+                      tr
+                        td | {{person.username}}
+                        td | {{person.age}}
+                        td | {{person.answers}}
 
-                  strong Respuestas Correctas:
-                  |  {{ person.answers}}
+
 
 
     footer

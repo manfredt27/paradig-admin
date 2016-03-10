@@ -5,7 +5,7 @@
   main
     .overview
       div
-        img(src='app/assets/logo.png', style='\
+        img(src='app/assets/files/pictures/logo.png', style='\
     height: 60px;\
     ')
       h2 Overview
@@ -19,22 +19,35 @@
             strong Masculino
             div(ng-repeat="person in vm.people | filter: { gender: 'M' }")
 
-                p
-                  strong Nombre de usuario:
-                  | {{person.username}}
+                table.flat-table.flat-table-1
 
-                  strong Respuestas correctas:
-                  | {{person.answers}}
+                    thead
+                      th Masculino
+                      th Nombre de usuario
+                      th Respuestas correctas
+                    tbody
+                      tr
+                        td Masculino
+                        td | {{person.username}}
+                        td | {{person.answers}}
+
 
             strong Femenino
             div(ng-repeat="person in vm.people | filter: { gender: 'F' }")
 
-                p
-                  strong Nombre de usuario:
-                  | {{person.username}}
 
-                  strong Respuestas correctas:
-                  | {{person.answers}}
+
+                table.flat-table.flat-table-1
+
+                    thead
+                      th Femenino
+                      th Nombre de usuario
+                      th Respuestas correctas
+                    tbody
+                      tr
+                        td Femenino
+                        td | {{person.username}}
+                        td | {{person.answers}}
 
 
 
