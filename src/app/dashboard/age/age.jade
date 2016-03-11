@@ -1,0 +1,36 @@
+-var title = "Dashboard";
+-var author = "@PERNIXSOLUTIONS"
+
+.dashboard
+  main
+    .overview
+      div
+        img(src='app/assets/files/pictures/logo.png', style='\
+    height: 60px;\
+    ')
+      h2 Overview
+
+      .widget-container
+
+        .widget
+          header
+            h3.iconicfill-mail Edad
+          .content
+            div(ng-repeat="person in vm.people | orderBy:'-age'")
+              table.flat-table.flat-table-1
+
+                    thead
+                      th Mombre
+                      th Edad
+                      th Respuestas correctas
+                    tbody
+                      tr
+                        td | {{person.username}}
+                        td | {{person.age}}
+                        td | {{person.answers}}
+
+
+
+
+    footer
+      p &copy; 2016 #{title} by #{author}

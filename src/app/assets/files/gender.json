@@ -1,0 +1,9 @@
+{
+  "people": [
+    {"username": "Saúl","answers": 20,"gender": "M"},
+    {"username": "Maria","answers": 30,"gender": "F"},
+    {"username": "Rebeca","answers": 40,"gender": "F"}
+  ]
+}
+
+

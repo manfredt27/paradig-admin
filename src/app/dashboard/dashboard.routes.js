@@ -2,20 +2,19 @@
   'use strict';
 
   angular
-    .module('paradigAdmin')
+    .module('paradigAdmin.dashboard')
     .config(routerConfig);
 
+  routerConfig.$inject = ['$stateProvider'];
+
   /** @ngInject */
-  function routerConfig($stateProvider, $urlRouterProvider) {
+  function routerConfig($stateProvider) {
     $stateProvider
-      .state('home', {
-        url: '/',
+      .state('dashboard', {
+        url: '/dashboard',
         templateUrl: 'app/dashboard/dashboard.html',
         controller: 'DashboardController',
         controllerAs: 'vm'
       });
-
-    $urlRouterProvider.otherwise('/');
   }
-
 })();
