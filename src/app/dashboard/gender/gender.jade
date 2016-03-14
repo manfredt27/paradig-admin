@@ -8,7 +8,6 @@
         img(src='app/assets/files/pictures/logo.png', style='\
     height: 60px;\
     ')
-      h2 Overview
 
       .widget-container
 
@@ -16,38 +15,26 @@
           header
             h3.iconicfill-mail Genero
           .content
-            strong Masculino
-            div(ng-repeat="person in vm.people | filter: { gender: 'M' }")
-
-                table.flat-table.flat-table-1
-
-                    thead
-                      th Masculino
-                      th Nombre de usuario
-                      th Respuestas correctas
-                    tbody
-                      tr
-                        td Masculino
-                        td | {{person.username}}
-                        td | {{person.answers}}
+            h3 Masculino
+            table.flat-table.flat-table-1
+              thead
+                th Nombre de usuario
+                th Respuestas correctas
+              tbody
+                tr(ng-repeat="person in vm.people | filter: { gender: 'M' }")
+                  td {{person.username}}
+                  td {{person.answers}}
 
 
-            strong Femenino
-            div(ng-repeat="person in vm.people | filter: { gender: 'F' }")
-
-
-
-                table.flat-table.flat-table-1
-
-                    thead
-                      th Femenino
-                      th Nombre de usuario
-                      th Respuestas correctas
-                    tbody
-                      tr
-                        td Femenino
-                        td | {{person.username}}
-                        td | {{person.answers}}
+            h3 Femenino
+            table.flat-table.flat-table-1
+              thead
+                th Nombre de usuario
+                th Respuestas correctas
+              tbody
+                tr(ng-repeat="person in vm.people | filter: { gender: 'F' }")
+                  td {{person.username}}
+                  td {{person.answers}}
 
 
 
