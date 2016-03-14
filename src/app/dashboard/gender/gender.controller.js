@@ -12,7 +12,7 @@
     vm.GenderController = GenderController;
     vm.dataManagerService = dataManagerService;
 
-    dataManagerService.getDataFor('app/assets/files/gender.json')
+    dataManagerService.getDataFor('app/assets/files/people.json')
       .then(function(data) {
         vm.people = data.data.people;
       })

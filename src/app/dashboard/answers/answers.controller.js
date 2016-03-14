@@ -12,7 +12,7 @@
     vm.AnswersController = AnswersController;
     vm.dataManagerService = dataManagerService;
 
-    dataManagerService.getDataFor('app/assets/files/answers.json')
+    dataManagerService.getDataFor('app/assets/files/people.json')
       .then(function(data) {
         vm.people= data.data.people;
       })

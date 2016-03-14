@@ -21,7 +21,7 @@
                 th Edad
                 th Respuestas correctas
               tbody
-                tr(ng-repeat="person in vm.people | orderBy:'-age'")
+                tr(ng-repeat="person in vm.people | orderBy:['-age', '-answers']")
                   td {{person.username}}
                   td {{person.age}}
                   td {{person.answers}}

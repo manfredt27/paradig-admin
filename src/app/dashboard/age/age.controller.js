@@ -12,7 +12,7 @@
     vm.AgeController = AgeController;
     vm.dataManagerService = dataManagerService;
 
-    dataManagerService.getDataFor('app/assets/files/age.json')
+    dataManagerService.getDataFor('app/assets/files/people.json')
       .success(function(data) {
         vm.people = data.people;
       })

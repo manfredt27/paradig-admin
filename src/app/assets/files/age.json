@@ -1,8 +1,0 @@
-{
-  "people": [
-      {"username": "Manfred", "age": 18, "answers": 7},
-      {"username": "Carlos", "age": 21, "answers": 7},
-      {"username": "Gian Carlo", "age": 16, "answers": 7},
-      {"username": "Saúl", "age": 12, "answers": 7}
-  ]
-}
